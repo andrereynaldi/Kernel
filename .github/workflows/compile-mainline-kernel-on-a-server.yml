@@ -88,7 +88,7 @@ on:
           - -@SOGEK1NG__
 
 env:
-  TZ: Asia/jakarta
+  TZ: America/New_York
 
 jobs:
   build:
