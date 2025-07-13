@@ -91,16 +91,14 @@ on:
           - gzip
           - zstd
           - lzma
-      docker_image:
-        description: "Select Armbian docker image"
+      kernel_sign:
+        description: "Set the kernel custom signature"
         required: false
-        default: "bookworm"
+        default: "-@SOGEK1NG__"
         type: choice
         options:
-          - jammy
-          - noble
-          - bookworm
-          - bullseye
+          - -ophub
+          - -@SOGEK1NG__
 
 env:
   TZ: America/New_York
